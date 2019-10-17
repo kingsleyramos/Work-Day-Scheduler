@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <script src="moment.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -16,45 +18,65 @@
 
 <!-- Title, Description, and Current date -->
         <div class="row"> 
-            <h1>Work Day Schdeuler</h1>
-            <h3>A simple scheduling app for scheduling your work day</h3>
-            <h3 id="CurrentDate"></h3> <!-- Current Date -->
+            <div class="col-12">
 
+                <h1>Work Day Schdeuler</h1>
+                <h3>A simple scheduling app for scheduling your work day</h3>
+                <h3 id="CurrentDate"></h3> <!-- Current Date -->
+
+            </div>
         </div>
 
 <!-- Calendar Area -->
         <div class="row"> 
-            <div class="col-md-1"></div> <!-- Open Margin -->
+            <div class="col-1 p-0"></div> <!-- Open Margin -->
 
             <!-- TIME OF DAY -->
-            <div class="col-md-1">
-                <div class="time">9am</div>
-                <div class="time">10am</div>
-                <div class="time">11am</div>
-                <div class="time">12pm</div>
-                <div class="time">1pm</div>
-                <div class="time">2pm</div>
-                <div class="time">3pm</div>
-                <div class="time">4pm</div>
-                <div class="time">5pm</div>
+            <div class="col-1 p-0">
+                <div class="border border-dark border-left-0 time">9am</div>
+                <div class="border border-dark border-left-0 time"><span>10am</span></div>
+                <div class="border border-dark border-left-0 time"><span>11am</span></div>
+                <div class="border border-dark border-left-0 time"><span>12pm</span></div>
+                <div class="border border-dark border-left-0 time"><span>1pm</span></div>
+                <div class="border border-dark border-left-0 time"><span>2pm</span></div>
+                <div class="border border-dark border-left-0 time"><span>3pm</span></div>
+                <div class="border border-dark border-left-0 time"><span>4pm</span></div>
+                <div class="border border-dark border-left-0 time"><span>5pm</span></div>
 
 
             </div>
 
             <!-- TEXT AREAS -->
-            <div class="col-md-8">
-
+            <div class="col-8 p-0">
+                <div class="form-group">
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" rows="3" id="nineamtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" rows="3" id="tenamtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" rows="3" id="elevenamtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" rows="3" id="twelvepmtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" rows="3" id="onepmtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" rows="3" id="twopmtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" rows="3" id="threepmtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" rows="3" id="fourpmtextarea"></textarea>
+                <textarea class="form-control border border-dark border-left-0 border-right-0 rounded-0" rows="3" id="fivepmtextarea"></textarea>
+                </div>
 
             </div>
 
             <!-- SAVE BUTTONS -->
-            <div class="col-md-1">
-
+            <div class="col-1 p-0">
+                <button type="button" class="btn btn-info" id="9amsavebtn">Save</button>
+                <button type="button" class="btn btn-info" id="10amsavebtn">Save</button>
+                <button type="button" class="btn btn-info" id="11amsavebtn">Save</button>
+                <button type="button" class="btn btn-info" id="12pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info" id="1pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info" id="2pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info" id="3pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info" id="4pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info" id="5pmsavebtn">Save</button>
 
             </div>
-            <div class="col-md-1"></div> <!-- Open Margin -->
+            <div class="col-2"></div> <!-- Open Margin -->
         </div>
-
-    </div>    
+    </div>  
 </body>
 </html>
