@@ -1,0 +1,23 @@
+.time{
+    /* width: 80px; */
+    height: 80px;
+
+}
+
+textarea{
+    height: 80px!important;
+}
+
+button{
+    width: 80px;
+    height: 80px!important;
+}
+
+
+h1, h3 {
+    text-align: center;
+}
+
+#nineamtextarea{
+    background-color: green;
+}
