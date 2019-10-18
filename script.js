@@ -2,13 +2,19 @@ $(document).ready(function() {
 
     var timeFormat = 'HH:mm:ss'
 
+    // Shows current time
+    var dateFormat = moment().format('MMMM Do')
+    var dayFormat = moment().format('dddd')
+    $("#CurrentDate").text(dayFormat + ", " + dateFormat)
+
     past();
     current();
     future();
-
     var pastTime = setInterval(past, 1000);
     var currentTime = setInterval(current, 1000);
     var futureTime = setInterval(future, 1000);
+
+
 
 
 // Retrieves content from Local Storages and places in
