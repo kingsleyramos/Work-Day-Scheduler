@@ -14,19 +14,25 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container" id="topContainer">
 
 <!-- Title, Description, and Current date -->
         <div class="row"> 
             <div class="col-12">
-
-                <h1>Work Day Schdeuler</h1>
+                <h1>Work Day Scheduler</h1>
+                <br>
                 <h3>A simple scheduling app for scheduling your work day</h3>
-                <h3 id="CurrentDate"></h3> <!-- Current Date -->
-
+                <br>
+                <h4 id="CurrentDate"></h4> <!-- Current Date -->
+                
             </div>
         </div>
 
+    </div>
+
+    <div id="border"></div>
+
+    <div class="container" id="bottomContainer">
 <!-- Calendar Area -->
         <div class="row"> 
             <div class="col-1 p-0"></div> <!-- Open Margin -->
@@ -34,14 +40,14 @@
             <!-- TIME OF DAY -->
             <div class="col-1 p-0">
                 <div class="border border-dark border-left-0 time">9am</div>
-                <div class="border border-dark border-left-0 time"><span>10am</span></div>
-                <div class="border border-dark border-left-0 time"><span>11am</span></div>
-                <div class="border border-dark border-left-0 time"><span>12pm</span></div>
-                <div class="border border-dark border-left-0 time"><span>1pm</span></div>
-                <div class="border border-dark border-left-0 time"><span>2pm</span></div>
-                <div class="border border-dark border-left-0 time"><span>3pm</span></div>
-                <div class="border border-dark border-left-0 time"><span>4pm</span></div>
-                <div class="border border-dark border-left-0 time"><span>5pm</span></div>
+                <div class="border border-dark border-left-0 time">10am</div>
+                <div class="border border-dark border-left-0 time">11am</div>
+                <div class="border border-dark border-left-0 time">12pm</div>
+                <div class="border border-dark border-left-0 time">1pm</div>
+                <div class="border border-dark border-left-0 time">2pm</div>
+                <div class="border border-dark border-left-0 time">3pm</div>
+                <div class="border border-dark border-left-0 time">4pm</div>
+                <div class="border border-dark border-left-0 time">5pm</div>
 
 
             </div>
@@ -64,15 +70,15 @@
 
             <!-- SAVE BUTTONS -->
             <div class="col-1 p-0">
-                <button type="button" class="btn btn-info" id="9amsavebtn">Save</button>
-                <button type="button" class="btn btn-info" id="10amsavebtn">Save</button>
-                <button type="button" class="btn btn-info" id="11amsavebtn">Save</button>
-                <button type="button" class="btn btn-info" id="12pmsavebtn">Save</button>
-                <button type="button" class="btn btn-info" id="1pmsavebtn">Save</button>
-                <button type="button" class="btn btn-info" id="2pmsavebtn">Save</button>
-                <button type="button" class="btn btn-info" id="3pmsavebtn">Save</button>
-                <button type="button" class="btn btn-info" id="4pmsavebtn">Save</button>
-                <button type="button" class="btn btn-info" id="5pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info rounded-right" id="9amsavebtn">Save</button>
+                <button type="button" class="btn btn-info rounded-right" id="10amsavebtn">Save</button>
+                <button type="button" class="btn btn-info rounded-right" id="11amsavebtn">Save</button>
+                <button type="button" class="btn btn-info rounded-right" id="12pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info rounded-right" id="1pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info rounded-right" id="2pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info rounded-right" id="3pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info rounded-right" id="4pmsavebtn">Save</button>
+                <button type="button" class="btn btn-info rounded-right" id="5pmsavebtn">Save</button>
 
             </div>
             <div class="col-2"></div> <!-- Open Margin -->
