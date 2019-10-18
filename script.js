@@ -134,7 +134,7 @@ function future(){
 }
 
 function current(){
-    if (moment().isBetween(moment('09:00:00', timeFormat), moment('09:00:00', timeFormat))) {
+    if (moment().isBetween(moment('09:00:00', timeFormat), moment('09:59:59', timeFormat))) {
         $("#nineamtextarea").css("background-color","#ea9999")
     }
     if (moment().isBetween(moment('10:00:00', timeFormat), moment('10:59:59', timeFormat))) {
