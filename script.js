@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    // called format variable for use in moment
     var timeFormat = 'HH:mm:ss'
 
     // Shows current time
@@ -7,9 +8,11 @@ $(document).ready(function() {
     var dayFormat = moment().format('dddd')
     $("#CurrentDate").text(dayFormat + ", " + dateFormat)
 
+    // will run all functions once at first load
     past();
     current();
     future();
+    // will run functions above every second
     var pastTime = setInterval(past, 1000);
     var currentTime = setInterval(current, 1000);
     var futureTime = setInterval(future, 1000);
